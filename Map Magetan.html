@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_314a6ffce5ea98a00bf2d49d79384961 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_314a6ffce5ea98a00bf2d49d79384961" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_314a6ffce5ea98a00bf2d49d79384961 = L.map(
+                "map_314a6ffce5ea98a00bf2d49d79384961",
+                {
+                    center: [-7.536, 112.238],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+
+            
+
+        
+    
+            var tile_layer_9c4bf470a2aec4292054a6e20034c0f2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9c4bf470a2aec4292054a6e20034c0f2.addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+            var marker_cluster_3a135ad61d0c86d31a37e7e9ed546a2b = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            marker_cluster_3a135ad61d0c86d31a37e7e9ed546a2b.addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+            var circle_marker_64c3eef61b7a04cbab8f01987df6f254 = L.circleMarker(
+                [-7.7415, 111.3427],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_931f81a815fb54147540174b83cb5b80 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d0f7c2c09556b1e89e963544d7e888c = $(`<div id="html_0d0f7c2c09556b1e89e963544d7e888c" style="width: 100.0%; height: 100.0%;">SLB IDHATI (SLB)</div>`)[0];
+                popup_931f81a815fb54147540174b83cb5b80.setContent(html_0d0f7c2c09556b1e89e963544d7e888c);
+            
+        
+
+        circle_marker_64c3eef61b7a04cbab8f01987df6f254.bindPopup(popup_931f81a815fb54147540174b83cb5b80)
+        ;
+
+        
+    
+    
+            var circle_marker_4eb06ee99b8a26b133ced1286f64a3ec = L.circleMarker(
+                [-7.6321, 111.3064],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_d17cce89c0ff236183e1a95a08f9b079 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f95d0937221eb4ed1bbf90347264c1a4 = $(`<div id="html_f95d0937221eb4ed1bbf90347264c1a4" style="width: 100.0%; height: 100.0%;">SLB INSAN ISTIMEWA (SLB)</div>`)[0];
+                popup_d17cce89c0ff236183e1a95a08f9b079.setContent(html_f95d0937221eb4ed1bbf90347264c1a4);
+            
+        
+
+        circle_marker_4eb06ee99b8a26b133ced1286f64a3ec.bindPopup(popup_d17cce89c0ff236183e1a95a08f9b079)
+        ;
+
+        
+    
+    
+            var circle_marker_30405bcf9d7daf4f955ef3ba4f302ec4 = L.circleMarker(
+                [-7.5662, 111.4249],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_54276a952da22be2ab3de3e570aed2c9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2546eaf021fb5bc514bf67c16581bcd1 = $(`<div id="html_2546eaf021fb5bc514bf67c16581bcd1" style="width: 100.0%; height: 100.0%;">SLB NEGERI KARANGREJO MAGETAN (SLB)</div>`)[0];
+                popup_54276a952da22be2ab3de3e570aed2c9.setContent(html_2546eaf021fb5bc514bf67c16581bcd1);
+            
+        
+
+        circle_marker_30405bcf9d7daf4f955ef3ba4f302ec4.bindPopup(popup_54276a952da22be2ab3de3e570aed2c9)
+        ;
+
+        
+    
+    
+            var circle_marker_0a059b41553387fdef59ba800b1bc085 = L.circleMarker(
+                [-7.5966, 111.4408],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_3aaa56ae7130622d446541ce0731ed4d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d49502f152a4bd0d553d5dcb93d9954e = $(`<div id="html_d49502f152a4bd0d553d5dcb93d9954e" style="width: 100.0%; height: 100.0%;">SLB Paedagogia Maospati (SLB)</div>`)[0];
+                popup_3aaa56ae7130622d446541ce0731ed4d.setContent(html_d49502f152a4bd0d553d5dcb93d9954e);
+            
+        
+
+        circle_marker_0a059b41553387fdef59ba800b1bc085.bindPopup(popup_3aaa56ae7130622d446541ce0731ed4d)
+        ;
+
+        
+    
+    
+            var circle_marker_36fe442d85f95887333cee55198939fd = L.circleMarker(
+                [-7.6482, 111.3238],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_726d1ba3b2382a0194af0644272a04ad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1725a82f2f0f846f3edd7aa21f954447 = $(`<div id="html_1725a82f2f0f846f3edd7aa21f954447" style="width: 100.0%; height: 100.0%;">SLB PANCA BHAKTI (SLB)</div>`)[0];
+                popup_726d1ba3b2382a0194af0644272a04ad.setContent(html_1725a82f2f0f846f3edd7aa21f954447);
+            
+        
+
+        circle_marker_36fe442d85f95887333cee55198939fd.bindPopup(popup_726d1ba3b2382a0194af0644272a04ad)
+        ;
+
+        
+    
+    
+            var circle_marker_47f422acca64fe87c3bd91b3be7b04d3 = L.circleMarker(
+                [-7.6806, 111.4206],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_de63be459dbc89b89f679487a692bce1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_380d562d90b9804f4a0561bde4badbe0 = $(`<div id="html_380d562d90b9804f4a0561bde4badbe0" style="width: 100.0%; height: 100.0%;">SLB PGRI KAWEDANAN (SLB)</div>`)[0];
+                popup_de63be459dbc89b89f679487a692bce1.setContent(html_380d562d90b9804f4a0561bde4badbe0);
+            
+        
+
+        circle_marker_47f422acca64fe87c3bd91b3be7b04d3.bindPopup(popup_de63be459dbc89b89f679487a692bce1)
+        ;
+
+        
+    
+    
+            var circle_marker_8cebdae9a864455cb19c927eb86c301f = L.circleMarker(
+                [-7.7503, 111.4059],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_e70f80e4c3cc223a89a0b42e63566e63 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1442fbc0516b04646800c33dfab5f00d = $(`<div id="html_1442fbc0516b04646800c33dfab5f00d" style="width: 100.0%; height: 100.0%;">SLB PSM LEMBEYAN (SLB)</div>`)[0];
+                popup_e70f80e4c3cc223a89a0b42e63566e63.setContent(html_1442fbc0516b04646800c33dfab5f00d);
+            
+        
+
+        circle_marker_8cebdae9a864455cb19c927eb86c301f.bindPopup(popup_e70f80e4c3cc223a89a0b42e63566e63)
+        ;
+
+        
+    
+    
+            var circle_marker_7055f760141642a3220ab1421b7a22b8 = L.circleMarker(
+                [-7.6834, 111.4672],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_f0d9201326cb0f6c03d13d3464d1d7b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7084355412c6807e674fb0e2d74eeeae = $(`<div id="html_7084355412c6807e674fb0e2d74eeeae" style="width: 100.0%; height: 100.0%;">SLB PSM TAKERAN MAGETAN (SLB)</div>`)[0];
+                popup_f0d9201326cb0f6c03d13d3464d1d7b4.setContent(html_7084355412c6807e674fb0e2d74eeeae);
+            
+        
+
+        circle_marker_7055f760141642a3220ab1421b7a22b8.bindPopup(popup_f0d9201326cb0f6c03d13d3464d1d7b4)
+        ;
+
+        
+    
+    
+            var circle_marker_9a6fab52de53b6cec546adab77250d99 = L.circleMarker(
+                [-7.64382, 111.354882],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_d0f91d8dd59bb7e5ee36804c3af1bf6e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1354554301817eaf143de1a62a49c4d0 = $(`<div id="html_1354554301817eaf143de1a62a49c4d0" style="width: 100.0%; height: 100.0%;">SMA AR-ROSYIDAH (SMA)</div>`)[0];
+                popup_d0f91d8dd59bb7e5ee36804c3af1bf6e.setContent(html_1354554301817eaf143de1a62a49c4d0);
+            
+        
+
+        circle_marker_9a6fab52de53b6cec546adab77250d99.bindPopup(popup_d0f91d8dd59bb7e5ee36804c3af1bf6e)
+        ;
+
+        
+    
+    
+            var circle_marker_ed7da9ba64f4bdf8f9feaf6f6d11541b = L.circleMarker(
+                [-7.6552, 111.3151],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_b83d192277bf38eaab75519ffbb002bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc3b858c80f99600655616b72a1a99a2 = $(`<div id="html_bc3b858c80f99600655616b72a1a99a2" style="width: 100.0%; height: 100.0%;">SMA ISLAMIC INTERNATIONAL SCHOOL PSM (SMA)</div>`)[0];
+                popup_b83d192277bf38eaab75519ffbb002bf.setContent(html_bc3b858c80f99600655616b72a1a99a2);
+            
+        
+
+        circle_marker_ed7da9ba64f4bdf8f9feaf6f6d11541b.bindPopup(popup_b83d192277bf38eaab75519ffbb002bf)
+        ;
+
+        
+    
+    
+            var circle_marker_c6a6dcc29c9d1050e68b69db3652421a = L.circleMarker(
+                [-7.5532, 111.4539],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_b2b366701a1c57bfe1be04c727891953 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e6b31058969545ee171b2d1e442b60c = $(`<div id="html_2e6b31058969545ee171b2d1e442b60c" style="width: 100.0%; height: 100.0%;">SMAN 1 BARAT (SMA)</div>`)[0];
+                popup_b2b366701a1c57bfe1be04c727891953.setContent(html_2e6b31058969545ee171b2d1e442b60c);
+            
+        
+
+        circle_marker_c6a6dcc29c9d1050e68b69db3652421a.bindPopup(popup_b2b366701a1c57bfe1be04c727891953)
+        ;
+
+        
+    
+    
+            var circle_marker_9c42739c902866a36a50c09b601adbfe = L.circleMarker(
+                [-7.5772, 111.4064],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_403245b19f094f96c1e4cde7b39acd04 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b6e1fb48552f36ab7089f0d95fc0c0a1 = $(`<div id="html_b6e1fb48552f36ab7089f0d95fc0c0a1" style="width: 100.0%; height: 100.0%;">SMAN 1 KARAS (SMA)</div>`)[0];
+                popup_403245b19f094f96c1e4cde7b39acd04.setContent(html_b6e1fb48552f36ab7089f0d95fc0c0a1);
+            
+        
+
+        circle_marker_9c42739c902866a36a50c09b601adbfe.bindPopup(popup_403245b19f094f96c1e4cde7b39acd04)
+        ;
+
+        
+    
+    
+            var circle_marker_36db00daadb5be4294f9cc12976f7793 = L.circleMarker(
+                [-7.6842, 111.4277],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_58df686af737dc90eefe26379d427a1d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_84e1a5e47fc1383529e8fbbf2ff6feae = $(`<div id="html_84e1a5e47fc1383529e8fbbf2ff6feae" style="width: 100.0%; height: 100.0%;">SMAN 1 KAWEDANAN (SMA)</div>`)[0];
+                popup_58df686af737dc90eefe26379d427a1d.setContent(html_84e1a5e47fc1383529e8fbbf2ff6feae);
+            
+        
+
+        circle_marker_36db00daadb5be4294f9cc12976f7793.bindPopup(popup_58df686af737dc90eefe26379d427a1d)
+        ;
+
+        
+    
+    
+            var circle_marker_846784aa099555e25f92a85edf250933 = L.circleMarker(
+                [-7.6555, 111.3167],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_a70c661e54519f479c6007b6cc364b95 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_94522c79fd3a10b4544e3ef8a0047d10 = $(`<div id="html_94522c79fd3a10b4544e3ef8a0047d10" style="width: 100.0%; height: 100.0%;">SMAN 1 MAGETAN (SMA)</div>`)[0];
+                popup_a70c661e54519f479c6007b6cc364b95.setContent(html_94522c79fd3a10b4544e3ef8a0047d10);
+            
+        
+
+        circle_marker_846784aa099555e25f92a85edf250933.bindPopup(popup_a70c661e54519f479c6007b6cc364b95)
+        ;
+
+        
+    
+    
+            var circle_marker_b946a194f0600bd7f7faba8c4575d2b0 = L.circleMarker(
+                [-7.5961, 111.425],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_f4baf8515cc107c478f03693f2175d43 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c4f93ae3ac5134d1df3512fb808c4531 = $(`<div id="html_c4f93ae3ac5134d1df3512fb808c4531" style="width: 100.0%; height: 100.0%;">SMAN 1 MAOSPATI (SMA)</div>`)[0];
+                popup_f4baf8515cc107c478f03693f2175d43.setContent(html_c4f93ae3ac5134d1df3512fb808c4531);
+            
+        
+
+        circle_marker_b946a194f0600bd7f7faba8c4575d2b0.bindPopup(popup_f4baf8515cc107c478f03693f2175d43)
+        ;
+
+        
+    
+    
+            var circle_marker_74ed4cb2a92a15232b578b1848364265 = L.circleMarker(
+                [-7.75, 111.3449],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_db8cf724333993753ecf44367ec58762 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4cc81ad3b5c1e353f937e7fc8d739c0f = $(`<div id="html_4cc81ad3b5c1e353f937e7fc8d739c0f" style="width: 100.0%; height: 100.0%;">SMAN 1 PARANG (SMA)</div>`)[0];
+                popup_db8cf724333993753ecf44367ec58762.setContent(html_4cc81ad3b5c1e353f937e7fc8d739c0f);
+            
+        
+
+        circle_marker_74ed4cb2a92a15232b578b1848364265.bindPopup(popup_db8cf724333993753ecf44367ec58762)
+        ;
+
+        
+    
+    
+            var circle_marker_e02ab012f2c8a3c0dcb4873631654980 = L.circleMarker(
+                [-7.6648, 111.2644],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_21a0dfb7e664852963d7f2f889dab265 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a714a35dff1c70fde913f53bd6121bfa = $(`<div id="html_a714a35dff1c70fde913f53bd6121bfa" style="width: 100.0%; height: 100.0%;">SMAN 1 PLAOSAN (SMA)</div>`)[0];
+                popup_21a0dfb7e664852963d7f2f889dab265.setContent(html_a714a35dff1c70fde913f53bd6121bfa);
+            
+        
+
+        circle_marker_e02ab012f2c8a3c0dcb4873631654980.bindPopup(popup_21a0dfb7e664852963d7f2f889dab265)
+        ;
+
+        
+    
+    
+            var circle_marker_e21ad4e97e562c26eaaa750927bf409f = L.circleMarker(
+                [-7.6224, 111.3747],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_5ddaa5abf552129204c2f6ce18a3364f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_93dcdf53dec87eca65d8d56521c43689 = $(`<div id="html_93dcdf53dec87eca65d8d56521c43689" style="width: 100.0%; height: 100.0%;">SMAN 1 SUKOMORO (SMA)</div>`)[0];
+                popup_5ddaa5abf552129204c2f6ce18a3364f.setContent(html_93dcdf53dec87eca65d8d56521c43689);
+            
+        
+
+        circle_marker_e21ad4e97e562c26eaaa750927bf409f.bindPopup(popup_5ddaa5abf552129204c2f6ce18a3364f)
+        ;
+
+        
+    
+    
+            var circle_marker_4caaac85ed259fed91d2e457b859cf23 = L.circleMarker(
+                [-7.6401, 111.3308],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_4788961a80e496aaa8f9980bb1eb1d2a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_44e1509d7cc6be4e381f07da2db07913 = $(`<div id="html_44e1509d7cc6be4e381f07da2db07913" style="width: 100.0%; height: 100.0%;">SMAN 2 MAGETAN (SMA)</div>`)[0];
+                popup_4788961a80e496aaa8f9980bb1eb1d2a.setContent(html_44e1509d7cc6be4e381f07da2db07913);
+            
+        
+
+        circle_marker_4caaac85ed259fed91d2e457b859cf23.bindPopup(popup_4788961a80e496aaa8f9980bb1eb1d2a)
+        ;
+
+        
+    
+    
+            var circle_marker_f9043db8bc036e149f12283214cfb0a2 = L.circleMarker(
+                [-7.6539, 111.2992],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_944c5b1c571c15fea119477b4e6ac021 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_98bd124e047898162cffca195ffb871b = $(`<div id="html_98bd124e047898162cffca195ffb871b" style="width: 100.0%; height: 100.0%;">SMAN 3 MAGETAN (SMA)</div>`)[0];
+                popup_944c5b1c571c15fea119477b4e6ac021.setContent(html_98bd124e047898162cffca195ffb871b);
+            
+        
+
+        circle_marker_f9043db8bc036e149f12283214cfb0a2.bindPopup(popup_944c5b1c571c15fea119477b4e6ac021)
+        ;
+
+        
+    
+    
+            var circle_marker_7bcff5bb284972394e038a3809b875b0 = L.circleMarker(
+                [-7.7292, 111.2578],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_56e1f41a1b17f02329b8af6a21f8a987 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3392f5e72560e4f97c3733083a117823 = $(`<div id="html_3392f5e72560e4f97c3733083a117823" style="width: 100.0%; height: 100.0%;">SMAS DARUL ULUM (SMA)</div>`)[0];
+                popup_56e1f41a1b17f02329b8af6a21f8a987.setContent(html_3392f5e72560e4f97c3733083a117823);
+            
+        
+
+        circle_marker_7bcff5bb284972394e038a3809b875b0.bindPopup(popup_56e1f41a1b17f02329b8af6a21f8a987)
+        ;
+
+        
+    
+    
+            var circle_marker_1ec738cf752e5ad53092ae1cd7f6c91a = L.circleMarker(
+                [-7.6554, 111.3149],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_be820dac48199af567a5045b0a52bb5a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3199a120c29d89a9663a5995f593a66e = $(`<div id="html_3199a120c29d89a9663a5995f593a66e" style="width: 100.0%; height: 100.0%;">SMAS PANCA BHAKTI MAGETAN (SMA)</div>`)[0];
+                popup_be820dac48199af567a5045b0a52bb5a.setContent(html_3199a120c29d89a9663a5995f593a66e);
+            
+        
+
+        circle_marker_1ec738cf752e5ad53092ae1cd7f6c91a.bindPopup(popup_be820dac48199af567a5045b0a52bb5a)
+        ;
+
+        
+    
+    
+            var circle_marker_12c93b5a5023a9c9d906723b0fdb6523 = L.circleMarker(
+                [-7.5965, 111.4253],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_b570beb860aac5602f73a6f42e1d56f1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70078fd75934ac74b2a8a35b39157e3b = $(`<div id="html_70078fd75934ac74b2a8a35b39157e3b" style="width: 100.0%; height: 100.0%;">SMAS PGRI MAOSPATI (SMA)</div>`)[0];
+                popup_b570beb860aac5602f73a6f42e1d56f1.setContent(html_70078fd75934ac74b2a8a35b39157e3b);
+            
+        
+
+        circle_marker_12c93b5a5023a9c9d906723b0fdb6523.bindPopup(popup_b570beb860aac5602f73a6f42e1d56f1)
+        ;
+
+        
+    
+    
+            var circle_marker_837c4f192c6be9a660d5d5ca266ca203 = L.circleMarker(
+                [-7.7269, 111.4573],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_47cfc55e7f0f97b6119ab8a20d858e97 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9043d279a414680d4bcf4a6594739650 = $(`<div id="html_9043d279a414680d4bcf4a6594739650" style="width: 100.0%; height: 100.0%;">SMK AL ISLAM DAUD KHOLIFATULLOH (SMK)</div>`)[0];
+                popup_47cfc55e7f0f97b6119ab8a20d858e97.setContent(html_9043d279a414680d4bcf4a6594739650);
+            
+        
+
+        circle_marker_837c4f192c6be9a660d5d5ca266ca203.bindPopup(popup_47cfc55e7f0f97b6119ab8a20d858e97)
+        ;
+
+        
+    
+    
+            var circle_marker_f52d7abb81320d663a87ffef48f51b27 = L.circleMarker(
+                [-7.663866, 111.329689],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_000cb0448bf6c62279fcc1bd08530c56 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f02664dc392f8076216215b8e0bbf099 = $(`<div id="html_f02664dc392f8076216215b8e0bbf099" style="width: 100.0%; height: 100.0%;">SMK AL-QOLAM (SMK)</div>`)[0];
+                popup_000cb0448bf6c62279fcc1bd08530c56.setContent(html_f02664dc392f8076216215b8e0bbf099);
+            
+        
+
+        circle_marker_f52d7abb81320d663a87ffef48f51b27.bindPopup(popup_000cb0448bf6c62279fcc1bd08530c56)
+        ;
+
+        
+    
+    
+            var circle_marker_88dbe90c96b7f37a6732980e878cc72c = L.circleMarker(
+                [-7.729232, 111.448666],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_16c06f72fa396770a11dbc60888b85d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_95b637444ee4a06b9a41d2a8753fdcfa = $(`<div id="html_95b637444ee4a06b9a41d2a8753fdcfa" style="width: 100.0%; height: 100.0%;">SMK AR-ROHMAN TEGALREJO (SMK)</div>`)[0];
+                popup_16c06f72fa396770a11dbc60888b85d6.setContent(html_95b637444ee4a06b9a41d2a8753fdcfa);
+            
+        
+
+        circle_marker_88dbe90c96b7f37a6732980e878cc72c.bindPopup(popup_16c06f72fa396770a11dbc60888b85d6)
+        ;
+
+        
+    
+    
+            var circle_marker_78ccba02276d89a07cc5d85d26d86be0 = L.circleMarker(
+                [-7.6138, 111.4621],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_ed020fa4f1fe9ee21793544bdd916399 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eacf4b4b9f8d8c7c9c8da4bfb1673d7a = $(`<div id="html_eacf4b4b9f8d8c7c9c8da4bfb1673d7a" style="width: 100.0%; height: 100.0%;">SMK KESEHATAN BAKTI INDONESIA MEDIKA (SMK)</div>`)[0];
+                popup_ed020fa4f1fe9ee21793544bdd916399.setContent(html_eacf4b4b9f8d8c7c9c8da4bfb1673d7a);
+            
+        
+
+        circle_marker_78ccba02276d89a07cc5d85d26d86be0.bindPopup(popup_ed020fa4f1fe9ee21793544bdd916399)
+        ;
+
+        
+    
+    
+            var circle_marker_98e8395297dcaef1bf2c8939a03a2c54 = L.circleMarker(
+                [-7.5466, 111.3987],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_1065db8163cd69d8d511887d23db7d78 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cbfcc341fa5853942cbafbe729ad3133 = $(`<div id="html_cbfcc341fa5853942cbafbe729ad3133" style="width: 100.0%; height: 100.0%;">SMK MAARIF DARUS SHOLIHIN (SMK)</div>`)[0];
+                popup_1065db8163cd69d8d511887d23db7d78.setContent(html_cbfcc341fa5853942cbafbe729ad3133);
+            
+        
+
+        circle_marker_98e8395297dcaef1bf2c8939a03a2c54.bindPopup(popup_1065db8163cd69d8d511887d23db7d78)
+        ;
+
+        
+    
+    
+            var circle_marker_32d7950e17b3f8c759070e4860dae48b = L.circleMarker(
+                [-7.751103, 111.446897],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_d8780ef512527837dfcb81f5573c1037 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5b9260698c4894606f176bde4a168bad = $(`<div id="html_5b9260698c4894606f176bde4a168bad" style="width: 100.0%; height: 100.0%;">SMK ROUDLOTUL HUDA MAGETAN (SMK)</div>`)[0];
+                popup_d8780ef512527837dfcb81f5573c1037.setContent(html_5b9260698c4894606f176bde4a168bad);
+            
+        
+
+        circle_marker_32d7950e17b3f8c759070e4860dae48b.bindPopup(popup_d8780ef512527837dfcb81f5573c1037)
+        ;
+
+        
+    
+    
+            var circle_marker_9e59861347027b1f93d60e32b5d3dc4e = L.circleMarker(
+                [-7.6456, 111.4266],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_655425d10d30c7e7fb1017bc91a445ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_527d935e5d1692c9cd28f278d5ad749b = $(`<div id="html_527d935e5d1692c9cd28f278d5ad749b" style="width: 100.0%; height: 100.0%;">SMKN 1 BENDO MAGETAN (SMK)</div>`)[0];
+                popup_655425d10d30c7e7fb1017bc91a445ef.setContent(html_527d935e5d1692c9cd28f278d5ad749b);
+            
+        
+
+        circle_marker_9e59861347027b1f93d60e32b5d3dc4e.bindPopup(popup_655425d10d30c7e7fb1017bc91a445ef)
+        ;
+
+        
+    
+    
+            var circle_marker_110fc6ae97fa55c78f3e10a599e34fac = L.circleMarker(
+                [-7.6587, 111.3289],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_91db22aaad8a557f3082a45c7c0f02d3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5dba5a816a68284afbd407d747ff0a23 = $(`<div id="html_5dba5a816a68284afbd407d747ff0a23" style="width: 100.0%; height: 100.0%;">SMKN 1 MAGETAN (SMK)</div>`)[0];
+                popup_91db22aaad8a557f3082a45c7c0f02d3.setContent(html_5dba5a816a68284afbd407d747ff0a23);
+            
+        
+
+        circle_marker_110fc6ae97fa55c78f3e10a599e34fac.bindPopup(popup_91db22aaad8a557f3082a45c7c0f02d3)
+        ;
+
+        
+    
+    
+            var circle_marker_122b8c5da58cebd8bab153f8b42d608b = L.circleMarker(
+                [-7.6586, 111.3272],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_093571aa01c0c48b1536b83ff609ff40 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cb714bb530a1e5b555c025c544e27e67 = $(`<div id="html_cb714bb530a1e5b555c025c544e27e67" style="width: 100.0%; height: 100.0%;">SMKN 2 MAGETAN (SMK)</div>`)[0];
+                popup_093571aa01c0c48b1536b83ff609ff40.setContent(html_cb714bb530a1e5b555c025c544e27e67);
+            
+        
+
+        circle_marker_122b8c5da58cebd8bab153f8b42d608b.bindPopup(popup_093571aa01c0c48b1536b83ff609ff40)
+        ;
+
+        
+    
+    
+            var circle_marker_d74a8c65722d6a290bd912ee499b69ca = L.circleMarker(
+                [-7.5348, 111.4814],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_4000021a55035474dc2ae83f813cf2bc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c8630a6148c6f87967e238972eb476bd = $(`<div id="html_c8630a6148c6f87967e238972eb476bd" style="width: 100.0%; height: 100.0%;">SMKN KARTOHARJO (SMK)</div>`)[0];
+                popup_4000021a55035474dc2ae83f813cf2bc.setContent(html_c8630a6148c6f87967e238972eb476bd);
+            
+        
+
+        circle_marker_d74a8c65722d6a290bd912ee499b69ca.bindPopup(popup_4000021a55035474dc2ae83f813cf2bc)
+        ;
+
+        
+    
+    
+            var circle_marker_357f02a0e9667225a3bb3ff3e8a1268e = L.circleMarker(
+                [-7.7109, 111.2465],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_6d7390fed6aa0886477a43d19504bd20 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a8d9618bdd39736b76a780589b59a70c = $(`<div id="html_a8d9618bdd39736b76a780589b59a70c" style="width: 100.0%; height: 100.0%;">SMKN PONCOL (SMK)</div>`)[0];
+                popup_6d7390fed6aa0886477a43d19504bd20.setContent(html_a8d9618bdd39736b76a780589b59a70c);
+            
+        
+
+        circle_marker_357f02a0e9667225a3bb3ff3e8a1268e.bindPopup(popup_6d7390fed6aa0886477a43d19504bd20)
+        ;
+
+        
+    
+    
+            var circle_marker_4bbf39f17952f06f73cda8da1797dd70 = L.circleMarker(
+                [-7.6831, 111.4521],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_9e51577f6b55e152fbc02cc1b3414f3b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5484f22c14cac56b8a4c939cf771d21e = $(`<div id="html_5484f22c14cac56b8a4c939cf771d21e" style="width: 100.0%; height: 100.0%;">SMKN TAKERAN (SMK)</div>`)[0];
+                popup_9e51577f6b55e152fbc02cc1b3414f3b.setContent(html_5484f22c14cac56b8a4c939cf771d21e);
+            
+        
+
+        circle_marker_4bbf39f17952f06f73cda8da1797dd70.bindPopup(popup_9e51577f6b55e152fbc02cc1b3414f3b)
+        ;
+
+        
+    
+    
+            var circle_marker_d570440fc2757d8fa0af55a0bacbee5f = L.circleMarker(
+                [-7.6756, 111.3445],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_3fff8199b31ac708fd7f00f09c921798 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b9f3bffa38dd24e71211bfd794eb89ea = $(`<div id="html_b9f3bffa38dd24e71211bfd794eb89ea" style="width: 100.0%; height: 100.0%;">SMKS BERLIAN NUSANTARA (SMK)</div>`)[0];
+                popup_3fff8199b31ac708fd7f00f09c921798.setContent(html_b9f3bffa38dd24e71211bfd794eb89ea);
+            
+        
+
+        circle_marker_d570440fc2757d8fa0af55a0bacbee5f.bindPopup(popup_3fff8199b31ac708fd7f00f09c921798)
+        ;
+
+        
+    
+    
+            var circle_marker_24a900a8ec9843b02824aa31b3bf558b = L.circleMarker(
+                [-7.6884, 111.4183],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_3f53c02fafca6cae3fcd26c9b930ebaf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bf3a841ed22324d9744d64399e9a1fb5 = $(`<div id="html_bf3a841ed22324d9744d64399e9a1fb5" style="width: 100.0%; height: 100.0%;">SMKS KRISTEN PANCASILA 2 (SMK)</div>`)[0];
+                popup_3f53c02fafca6cae3fcd26c9b930ebaf.setContent(html_bf3a841ed22324d9744d64399e9a1fb5);
+            
+        
+
+        circle_marker_24a900a8ec9843b02824aa31b3bf558b.bindPopup(popup_3f53c02fafca6cae3fcd26c9b930ebaf)
+        ;
+
+        
+    
+    
+            var circle_marker_073220781c9233e7e3470782109f51ca = L.circleMarker(
+                [-7.6971, 111.4056],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_74ae890dd16d396634a85b35fab0e3e9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eab15bd65f61883d800e487ef9caec0a = $(`<div id="html_eab15bd65f61883d800e487ef9caec0a" style="width: 100.0%; height: 100.0%;">SMKS KRISTEN PANCASILA I (SMK)</div>`)[0];
+                popup_74ae890dd16d396634a85b35fab0e3e9.setContent(html_eab15bd65f61883d800e487ef9caec0a);
+            
+        
+
+        circle_marker_073220781c9233e7e3470782109f51ca.bindPopup(popup_74ae890dd16d396634a85b35fab0e3e9)
+        ;
+
+        
+    
+    
+            var circle_marker_ec663d1c78451a9ee7c64eb08ecd3367 = L.circleMarker(
+                [-7.6342, 111.3293],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_c2c4442c06848623b7f85b5c3538327d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d44afbf02c8de6069f784efdbd882c99 = $(`<div id="html_d44afbf02c8de6069f784efdbd882c99" style="width: 100.0%; height: 100.0%;">SMKS MAGETAN 1 (SMK)</div>`)[0];
+                popup_c2c4442c06848623b7f85b5c3538327d.setContent(html_d44afbf02c8de6069f784efdbd882c99);
+            
+        
+
+        circle_marker_ec663d1c78451a9ee7c64eb08ecd3367.bindPopup(popup_c2c4442c06848623b7f85b5c3538327d)
+        ;
+
+        
+    
+    
+            var circle_marker_af3a55e94c49323f4f86b3696afebd84 = L.circleMarker(
+                [-7.6626, 111.3413],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_52266b1388080d742406d546c7acbab1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1c4dc7fbaf2a862e0848c57a9c0cf05b = $(`<div id="html_1c4dc7fbaf2a862e0848c57a9c0cf05b" style="width: 100.0%; height: 100.0%;">SMKS MAGETAN 1 YKP (SMK)</div>`)[0];
+                popup_52266b1388080d742406d546c7acbab1.setContent(html_1c4dc7fbaf2a862e0848c57a9c0cf05b);
+            
+        
+
+        circle_marker_af3a55e94c49323f4f86b3696afebd84.bindPopup(popup_52266b1388080d742406d546c7acbab1)
+        ;
+
+        
+    
+    
+            var circle_marker_e7522348c2a51b6afbbf11114d1f0c4d = L.circleMarker(
+                [-7.602, 111.4469],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_697dc620221bb9372355f5778ff018f9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b200049440f0ef360ef9ecdce677d395 = $(`<div id="html_b200049440f0ef360ef9ecdce677d395" style="width: 100.0%; height: 100.0%;">SMKS MAOSPATI (SMK)</div>`)[0];
+                popup_697dc620221bb9372355f5778ff018f9.setContent(html_b200049440f0ef360ef9ecdce677d395);
+            
+        
+
+        circle_marker_e7522348c2a51b6afbbf11114d1f0c4d.bindPopup(popup_697dc620221bb9372355f5778ff018f9)
+        ;
+
+        
+    
+    
+            var circle_marker_b3c37fb7412e4cad2804cf7ea6575918 = L.circleMarker(
+                [-7.6172, 111.2981],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_16157550cb28a560a42a0ec604a87909 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_398450688ee356c2e676a2aa3435c1f8 = $(`<div id="html_398450688ee356c2e676a2aa3435c1f8" style="width: 100.0%; height: 100.0%;">SMKS MUHAMMADIYAH PANEKAN (SMK)</div>`)[0];
+                popup_16157550cb28a560a42a0ec604a87909.setContent(html_398450688ee356c2e676a2aa3435c1f8);
+            
+        
+
+        circle_marker_b3c37fb7412e4cad2804cf7ea6575918.bindPopup(popup_16157550cb28a560a42a0ec604a87909)
+        ;
+
+        
+    
+    
+            var circle_marker_fa5f1f4bb9f99beb0d60c3df977afacd = L.circleMarker(
+                [-7.6479, 111.3236],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_34cea69d18322321334ad6be7bd0d13a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3276a7fb28e65d9c546fb696c697b06d = $(`<div id="html_3276a7fb28e65d9c546fb696c697b06d" style="width: 100.0%; height: 100.0%;">SMKS PANCA BAKTI MAGETAN (SMK)</div>`)[0];
+                popup_34cea69d18322321334ad6be7bd0d13a.setContent(html_3276a7fb28e65d9c546fb696c697b06d);
+            
+        
+
+        circle_marker_fa5f1f4bb9f99beb0d60c3df977afacd.bindPopup(popup_34cea69d18322321334ad6be7bd0d13a)
+        ;
+
+        
+    
+    
+            var circle_marker_63cd1177df93bd396e2de80025eb5e1b = L.circleMarker(
+                [-7.7463, 111.3288],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_503f890a2c5c285e439103ae65f1a13c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_adf495dab8262b222447be3e0c76f6d8 = $(`<div id="html_adf495dab8262b222447be3e0c76f6d8" style="width: 100.0%; height: 100.0%;">SMKS PANCA BHAKTI 5 PARANG (SMK)</div>`)[0];
+                popup_503f890a2c5c285e439103ae65f1a13c.setContent(html_adf495dab8262b222447be3e0c76f6d8);
+            
+        
+
+        circle_marker_63cd1177df93bd396e2de80025eb5e1b.bindPopup(popup_503f890a2c5c285e439103ae65f1a13c)
+        ;
+
+        
+    
+    
+            var circle_marker_e1b7bf81dea3fb5a94455fb44a7fa31b = L.circleMarker(
+                [-7.6125, 111.4572],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_b4994286f6efabb5df48ea3ffdf986aa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_af4061b5f49c6d6f7f725f22a702c05c = $(`<div id="html_af4061b5f49c6d6f7f725f22a702c05c" style="width: 100.0%; height: 100.0%;">SMKS PENERBANGAN ANGKASA LANUD IWJ (SMK)</div>`)[0];
+                popup_b4994286f6efabb5df48ea3ffdf986aa.setContent(html_af4061b5f49c6d6f7f725f22a702c05c);
+            
+        
+
+        circle_marker_e1b7bf81dea3fb5a94455fb44a7fa31b.bindPopup(popup_b4994286f6efabb5df48ea3ffdf986aa)
+        ;
+
+        
+    
+    
+            var circle_marker_d4553324f6d53c64be148cf77a60d0bb = L.circleMarker(
+                [-7.6069, 111.4083],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_88975c20b73fb23c48ab7f4af07bd635 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6f6ea93d46eb0d4785c48cede19e0967 = $(`<div id="html_6f6ea93d46eb0d4785c48cede19e0967" style="width: 100.0%; height: 100.0%;">SMKS PERSATUAN MAOSPATI (SMK)</div>`)[0];
+                popup_88975c20b73fb23c48ab7f4af07bd635.setContent(html_6f6ea93d46eb0d4785c48cede19e0967);
+            
+        
+
+        circle_marker_d4553324f6d53c64be148cf77a60d0bb.bindPopup(popup_88975c20b73fb23c48ab7f4af07bd635)
+        ;
+
+        
+    
+    
+            var circle_marker_d8281692f3a2d4908ce7fe4987052907 = L.circleMarker(
+                [-7.643, 111.3343],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_4c09701a66baefc0269181defbcf3c20 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a746aa7ac7c4ef01af3226e6a6dec35f = $(`<div id="html_a746aa7ac7c4ef01af3226e6a6dec35f" style="width: 100.0%; height: 100.0%;">SMKS PGRI 1 MAGETAN (SMK)</div>`)[0];
+                popup_4c09701a66baefc0269181defbcf3c20.setContent(html_a746aa7ac7c4ef01af3226e6a6dec35f);
+            
+        
+
+        circle_marker_d8281692f3a2d4908ce7fe4987052907.bindPopup(popup_4c09701a66baefc0269181defbcf3c20)
+        ;
+
+        
+    
+    
+            var circle_marker_502ce1c1afa8337bdda38a5356e10876 = L.circleMarker(
+                [-7.6829, 111.4218],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_c83092956a49f044388335e211b50ace = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d8cc7f7b39a50c0d820e74d516a1b1da = $(`<div id="html_d8cc7f7b39a50c0d820e74d516a1b1da" style="width: 100.0%; height: 100.0%;">SMKS PGRI KAWEDANAN (SMK)</div>`)[0];
+                popup_c83092956a49f044388335e211b50ace.setContent(html_d8cc7f7b39a50c0d820e74d516a1b1da);
+            
+        
+
+        circle_marker_502ce1c1afa8337bdda38a5356e10876.bindPopup(popup_c83092956a49f044388335e211b50ace)
+        ;
+
+        
+    
+    
+            var circle_marker_e2f0ac8b60769ad7cb3e346d78116480 = L.circleMarker(
+                [-7.6772, 111.417],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_c90859ea3f9689745ebcec079acdfd87 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bd7df00bda559a09f6f94ba67379bbbf = $(`<div id="html_bd7df00bda559a09f6f94ba67379bbbf" style="width: 100.0%; height: 100.0%;">SMKS PSM 1 KAWEDANAN (SMK)</div>`)[0];
+                popup_c90859ea3f9689745ebcec079acdfd87.setContent(html_bd7df00bda559a09f6f94ba67379bbbf);
+            
+        
+
+        circle_marker_e2f0ac8b60769ad7cb3e346d78116480.bindPopup(popup_c90859ea3f9689745ebcec079acdfd87)
+        ;
+
+        
+    
+    
+            var circle_marker_5d4bed06cc639377dba089f219d84f44 = L.circleMarker(
+                [-7.6837, 111.4683],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_210c62dfc6186cd7de9f1124558f629e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_318f90ce3b75d0f22ecee085a0d1812b = $(`<div id="html_318f90ce3b75d0f22ecee085a0d1812b" style="width: 100.0%; height: 100.0%;">SMKS PSM 1 TAKERAN (SMK)</div>`)[0];
+                popup_210c62dfc6186cd7de9f1124558f629e.setContent(html_318f90ce3b75d0f22ecee085a0d1812b);
+            
+        
+
+        circle_marker_5d4bed06cc639377dba089f219d84f44.bindPopup(popup_210c62dfc6186cd7de9f1124558f629e)
+        ;
+
+        
+    
+    
+            var circle_marker_d6f9db35b81918df78fff05358dbfd1f = L.circleMarker(
+                [-7.6875, 111.4168],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_4ce32efb18b94cee935f98936f1eee29 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7257133311e685e08a0c3033c3fd7a86 = $(`<div id="html_7257133311e685e08a0c3033c3fd7a86" style="width: 100.0%; height: 100.0%;">SMKS PSM 2 KAWEDANAN (SMK)</div>`)[0];
+                popup_4ce32efb18b94cee935f98936f1eee29.setContent(html_7257133311e685e08a0c3033c3fd7a86);
+            
+        
+
+        circle_marker_d6f9db35b81918df78fff05358dbfd1f.bindPopup(popup_4ce32efb18b94cee935f98936f1eee29)
+        ;
+
+        
+    
+    
+            var circle_marker_4e57c962df7c5bddcb94433eed7055c4 = L.circleMarker(
+                [-7.6836, 111.4683],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_b4346729153e5d30729f82aa1ea177e9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b09eb0f17dfa245402ab53011c21bf08 = $(`<div id="html_b09eb0f17dfa245402ab53011c21bf08" style="width: 100.0%; height: 100.0%;">SMKS PSM 2 TAKERAN (SMK)</div>`)[0];
+                popup_b4346729153e5d30729f82aa1ea177e9.setContent(html_b09eb0f17dfa245402ab53011c21bf08);
+            
+        
+
+        circle_marker_4e57c962df7c5bddcb94433eed7055c4.bindPopup(popup_b4346729153e5d30729f82aa1ea177e9)
+        ;
+
+        
+    
+    
+            var circle_marker_3be3bc6a077d74176a602eebe4b06285 = L.circleMarker(
+                [-7.7449, 111.4111],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_d091554211e337284cf6f719260cbb00 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_59a6186dc6209cdfa3774ae8b94211b2 = $(`<div id="html_59a6186dc6209cdfa3774ae8b94211b2" style="width: 100.0%; height: 100.0%;">SMKS PSM LEMBEYAN (SMK)</div>`)[0];
+                popup_d091554211e337284cf6f719260cbb00.setContent(html_59a6186dc6209cdfa3774ae8b94211b2);
+            
+        
+
+        circle_marker_3be3bc6a077d74176a602eebe4b06285.bindPopup(popup_d091554211e337284cf6f719260cbb00)
+        ;
+
+        
+    
+    
+            var circle_marker_3093631e92733d94ae91a580ba4196e4 = L.circleMarker(
+                [-7.64, 111.332],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+        var popup_6cefd20baea5a855d5f1c356aa7b0fe0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_44352ca09b7827d3250b8c4f1a26067b = $(`<div id="html_44352ca09b7827d3250b8c4f1a26067b" style="width: 100.0%; height: 100.0%;">SMKS YOSONEGORO (SMK)</div>`)[0];
+                popup_6cefd20baea5a855d5f1c356aa7b0fe0.setContent(html_44352ca09b7827d3250b8c4f1a26067b);
+            
+        
+
+        circle_marker_3093631e92733d94ae91a580ba4196e4.bindPopup(popup_6cefd20baea5a855d5f1c356aa7b0fe0)
+        ;
+
+        
+    
+    
+            var tile_layer_ddea112c9e38c26d62a011f69e436e8d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_97af3a3d9a7c08c12140aa7603b8eac0 = new L.Control.MiniMap(
+                tile_layer_ddea112c9e38c26d62a011f69e436e8d,
+                {
+  "position": "bottomleft",
+  "width": 150,
+  "height": 150,
+  "collapsedWidth": 25,
+  "collapsedHeight": 25,
+  "zoomLevelOffset": -5,
+  "centerFixed": false,
+  "zoomAnimation": false,
+  "toggleDisplay": true,
+  "autoToggleDisplay": false,
+  "minimized": false,
+}
+            );
+            map_314a6ffce5ea98a00bf2d49d79384961.addControl(mini_map_97af3a3d9a7c08c12140aa7603b8eac0);
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topright",
+  "title": "Fullscreen",
+  "titleCancel": "Exit Fullscreen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+            var tile_layer_4b77864368f38a6bf59a381cab5c2b0e = L.tileLayer(
+                "https://tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=0c9d668cdf3a4be3ba34c27e1cbb7a7c",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Thunderforest",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4b77864368f38a6bf59a381cab5c2b0e.addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+            var tile_layer_850a9377f1651ded38e3fb2c5dde1004 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "ESRI",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_850a9377f1651ded38e3fb2c5dde1004.addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+        
+    
+            var layer_control_00ad8b9df2c6e2231324835055ec13de_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_9c4bf470a2aec4292054a6e20034c0f2,
+                    "Thunderforest" : tile_layer_4b77864368f38a6bf59a381cab5c2b0e,
+                    "ESRI" : tile_layer_850a9377f1651ded38e3fb2c5dde1004,
+                },
+                overlays :  {
+                    "macro_element_3a135ad61d0c86d31a37e7e9ed546a2b" : marker_cluster_3a135ad61d0c86d31a37e7e9ed546a2b,
+                },
+            };
+            let layer_control_00ad8b9df2c6e2231324835055ec13de = L.control.layers(
+                layer_control_00ad8b9df2c6e2231324835055ec13de_layers.base_layers,
+                layer_control_00ad8b9df2c6e2231324835055ec13de_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_314a6ffce5ea98a00bf2d49d79384961);
+
+        
+    
+            var measure_control_100cc4a7f4bee6fd4da53ce63c578ee4 = new L.Control.Measure(
+                {
+  "position": "topleft",
+  "primaryLengthUnit": "kilometers",
+  "secondaryLengthUnit": "meters",
+  "primaryAreaUnit": "hectares",
+  "secondaryAreaUnit": "sqmeters",
+});
+            map_314a6ffce5ea98a00bf2d49d79384961.addControl(measure_control_100cc4a7f4bee6fd4da53ce63c578ee4);
+
+            // Workaround for using this plugin with Leaflet>=1.8.0
+            // https://github.com/ljagis/leaflet-measure/issues/171
+            L.Control.Measure.include({
+                _setCaptureMarkerIcon: function () {
+                    // disable autopan
+                    this._captureMarker.options.autoPanOnFocus = false;
+                    // default function
+                    this._captureMarker.setIcon(
+                        L.divIcon({
+                            iconSize: this._map.getSize().multiplyBy(2)
+                        })
+                    );
+                },
+            });
+
+        
+</script>
+</html>
