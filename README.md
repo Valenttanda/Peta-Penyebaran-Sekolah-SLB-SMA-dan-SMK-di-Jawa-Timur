@@ -5,3 +5,8 @@ Untuk mengakses peta:
 4. Ekstrak ZIP tersebut
 5. Akan muncul folder dengan judul yang sama seperti file ZIP sebelumnya
 6. Selamat menikmati
+
+Cara Membaca Peta:
+Hijau: SMA
+Orange: SMK
+Biru: SLB
