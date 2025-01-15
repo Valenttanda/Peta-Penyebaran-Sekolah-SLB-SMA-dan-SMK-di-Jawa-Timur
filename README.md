@@ -7,6 +7,6 @@ Untuk mengakses peta:
 6. Selamat menikmati
 
 Cara Membaca Peta:
-Hijau: SMA
-Orange: SMK
-Biru: SLB
+- Hijau: SMA
+- Orange: SMK
+- Biru: SLB
